@@ -72,3 +72,5 @@ crashlytics-build.properties
 
 # Example assets
 /[Aa]ssets/ExampleAssets/*
+/[Aa]ssets/Samples/*
+/[Aa]ssets/Samples.meta

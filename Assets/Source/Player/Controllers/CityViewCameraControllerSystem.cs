@@ -5,7 +5,7 @@ class CityViewCameraControllerSystem : SystemBase
 {
     protected override void OnCreate()
     {
-        InputSystem.OnEv
+
     }
 
     protected override void OnUpdate()
