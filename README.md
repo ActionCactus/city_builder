@@ -34,3 +34,6 @@ If you have VSCode and the C# plugin installed and linked to a Unity project, ju
 
 ### "A meta data file exists but its asset can't be found"
 You deleted something outside the Unity editor, which is apparently a problem :) For now, just ignore the warning.  Need to figure out where the .meta files are referenced (since manually deleting them causes problems too).
+
+## .NET in VS Code
+* To implement an interface, click on the class which hasn't yet implemented its inherited members, `ctrl + .`, and select *Implement Interface*.
