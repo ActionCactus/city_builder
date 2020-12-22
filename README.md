@@ -8,7 +8,7 @@ This is a city builder
 We're using the Hybrid ECS approach for now since it'll allow us to utilize MonoBehavior for features not yet implemented in DOTS while enabling us to get the architectural and performance improvements which come from an ECS game.
 
 Useful links:
-* [Creating ECS gameplay](https://docs.unity3d.com/Packages/com.unity.entities@0.7/manual/gp_overview.html)
+* [Creating ECS gameplay](https://docs.unity3d.com/Packages/com.unity.entities@0.11/manual/gp_overview.html)
 
 ### Notes
 * Converting GameObjects to entities
@@ -27,3 +27,10 @@ public struct MyComponent : IComponentData
     public float testValue;
 }
 ```
+
+## Common Problems
+### No Reference Assemblies for UnityEngine Can Be Found in VS Code
+If you have VSCode and the C# plugin installed and linked to a Unity project, just open the project in Unity and create a new C# file.  It'll add the relevant [reference assemblies](https://docs.microsoft.com/en-us/dotnet/standard/assembly/reference-assemblies) to the `.csproj` file, enabling things like autocompletion in your editor.
+
+### "A meta data file exists but its asset can't be found"
+You deleted something outside the Unity editor, which is apparently a problem :) For now, just ignore the warning.  Need to figure out where the .meta files are referenced (since manually deleting them causes problems too).
